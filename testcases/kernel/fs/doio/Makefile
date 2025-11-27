@@ -34,7 +34,7 @@ INSTALL_TARGETS		:= rwtest
 
 $(MAKE_TARGETS): dataascii.o databin.o file_lock.o forker.o open_flags.o \
 		 datapid.o write_log.o pattern.o string_to_tokens.o \
-		 bytes_by_prefix.o
+		 bytes_by_prefix.o dir_tools.o
 
 %.o: $(abs_top_srcdir)/testcases/kernel/fs/doio/%.c
 
